@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://themehaven.net/item/html/aj5/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<!-- IE compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="AJ is a personal responsive portfolio template based on bootstrap v3.3.6">
+    <meta name="author" content="ThemeHavens">
+
+	<title>AJ | Portfolio</title>
+	
+
+
+	<!-- Bootstrap css file -->
+	<link rel="stylesheet" href="./AJ _ Portfolio_files/bootstrap.min.css">
+	<!-- Fontawesome library css file -->
+	<link rel="stylesheet" href="./AJ _ Portfolio_files/font-awesome.min.css">
+	<!-- Animate css file -->
+	<link rel="stylesheet" href="./AJ _ Portfolio_files/animate.css">
+	<!-- Custom styles css file -->
+	<link rel="stylesheet" href="./AJ _ Portfolio_files/style.css">
+
+	<!--[if lt IE 9]>
+    	<script src="js/html5shiv.js"></script>
+    	<script src="js/respond.js"></script>
+    <![endif]-->
+
+</head>
+<body id="top-page" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="70">
+
+	<!-- Start Loading Page --> 
+	<div class="loading" style="display: none;">
+		<div class="loading-wrapper" style="top: -100%;">
+			<div class="loader"></div>
+			<h4>A.J Loading</h4>
+		</div>
+	</div>
+	<!-- End Loading Page --> 
+
+
+	<!-- start Home Section -->
+	<div id="home" style="height: 613px; background-position: 50% 0px;">
+		<div class="overlay"></div>
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<!-- Start container -->
+			<div class="container">
+				<!-- Logo and toggle  -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collaps" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Start Logo -->
+			  		<a class="scroll-link navbar-brand" href="http://themehaven.net/item/html/aj5/#top-page">A.J</a>
+			  		<!-- End Logo -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-collaps" aria-expanded="false">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a class="scroll-link" href="http://themehaven.net/item/html/aj5/#top-page">Home</a>
+						</li>
+						<li class="">
+							<a class="scroll-link" href="http://themehaven.net/item/html/aj5/#demos">Demos</a>
+						</li>
+						<li class="">
+							<a class="scroll-link" href="http://themehaven.net/item/html/aj5/#purchase">Purchase</a>
+						</li>
+					</ul>
+				</div>   <!-- /.navbar-collapse --> 
+			</div>   <!-- End container -->
+		</nav>   <!-- End Navigation -->
+		<!-- Start Content -->
+		<div class="hero-content-wrapper overlay">
+			<div class="hero-content text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1>A.J</h1>
+							<p>Personal One Page Portfolio <br> with 3 different Home Page.</p>
+							<a href="http://themehaven.net/item/html/aj5/#demos" class="scroll-link btn btn-custom reverse light">See Demos</a>
+							<a href="http://themehaven.net/item/html/aj5/#purchase" class="scroll-link btn btn-custom dark">Purchase</a>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div> <!-- End Content -->
+	</div>
+	<!-- End Home Section -->
+
+	<!-- Start Demos Section -->
+	<section id="demos" class="section text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Choose Your Demo</h2>
+					<div class="separator centered"></div>
+					<p class="title">Here are all A.J demos. Enjoy checking them all.</p>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Project No. ( 1 ) -->
+				<div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<a class="demo-block" href="http://themehaven.net/item/html/aj5/demos/index.html" target="_blank">
+						<div class="work-img">
+							<img src="./AJ _ Portfolio_files/parallax-demo.jpg" alt="work image" class="img-responsive">
+						</div>
+						<div class="work-title text-center">
+							<h3>Home - Parallax</h3>
+						</div>
+					</a>
+				</div>
+				<!-- Project No. ( 2 ) -->
+				<div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<a class="demo-block" href="http://themehaven.net/item/html/aj5/demos/index-2.html" target="_blank">
+						<div class="work-img">
+							<img src="./AJ _ Portfolio_files/static-demo.jpg" alt="work image" class="img-responsive">
+						</div>
+						<div class="work-title text-center">
+							<h3>Home - Static</h3>
+						</div>
+					</a>
+				</div>
+				<!-- Project No. ( 3 ) -->
+				<div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<a class="demo-block" href="http://themehaven.net/item/html/aj5/demos/index-3.html" target="_blank">
+						<div class="work-img">
+							<img src="./AJ _ Portfolio_files/typed-demo.jpg" alt="work image" class="img-responsive">
+						</div>
+						<div class="work-title text-center">
+							<h3>Home - Typed Text</h3>
+						</div>
+					</a>
+				</div>
+				<!-- Project No. ( 5 ) -->
+				<div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<a class="demo-block" href="http://themehaven.net/item/html/aj5/#" target="_blank">
+						<div class="work-img">
+							<img src="./AJ _ Portfolio_files/600x520" alt="Coming Soon" class="img-responsive">
+						</div>
+						<div class="work-title text-center">
+							<h3>Home - Slider</h3>
+						</div>
+					</a>
+				</div>
+				<!-- Project No. ( 6 ) -->
+				<div class="col-sm-4 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+					<a class="demo-block" href="http://themehaven.net/item/html/aj5/#" target="_blank">
+						<div class="work-img">
+							<img src="./AJ _ Portfolio_files/600x520" alt="Coming Soon" class="img-responsive">
+						</div>
+						<div class="work-title text-center">
+							<h3>Coming Soon</h3>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Demos Section -->
+
+	<!-- Start Purchase Section -->
+	<section id="purchase" class="section" style="background-position: 50% 95px;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<div class="section-intro wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+						<h2>Do You want an awesome template <br> for your personal website? <br>Buy A.J Now.</h2>						
+					</div>
+					<a href="http://themehaven.net/item/html/aj5/#" class="wow bounceIn scroll-link btn btn-custom reverse dark" data-wow-duration="0.6s" data-wow-offset="200" style="visibility: visible; animation-duration: 0.6s; animation-name: bounceIn;">Purchase now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Purchase Section -->
+
+
+	<!-- Start Footer Section -->
+	<footer>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="para">© A.J 2017 All Rights Reserved. Created by ThemeHavens</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Section -->
+
+	<!-- Start To Top Button -->
+	<div id="toTop" class="">
+		<div class="top-button">
+			<i class="fa fa-angle-up"></i>
+		</div>
+	</div>
+	<!-- End To Top Button -->
+
+	<!-- jQuery JS file -->
+	<script src="./AJ _ Portfolio_files/jquery-1.12.1.min.js.download"></script>
+	<!-- Bootstrap JS file -->
+	<script src="./AJ _ Portfolio_files/bootstrap.min.js.download"></script>
+	<!-- jQuery easing file -->
+	<script src="./AJ _ Portfolio_files/jquery.easing.1.3.js.download"></script>
+	<!-- Parallax JS file -->
+	<script src="./AJ _ Portfolio_files/jquery.parallax-1.1.3.js.download"></script>
+	<!-- Smoothscroll JS file -->
+	<script src="./AJ _ Portfolio_files/smoothscroll.js.download"></script>
+	<!-- appear JS file -->
+	<script src="./AJ _ Portfolio_files/jquery.appear.js.download"></script>
+	<!-- Count-to JS file -->
+	<script src="./AJ _ Portfolio_files/jquery.countTo.js.download"></script>
+	<!-- Custom JS file -->
+	<script src="./AJ _ Portfolio_files/scripts.js.download"></script>
+	<!-- Wow.js file -->
+	<script src="./AJ _ Portfolio_files/wow.min.js.download"></script>
+	<script>
+		new WOW().init();
+	</script>
+
+</body></html>

@@ -1,0 +1,453 @@
+/* ---------------------------------------
+
+Template Name: AJ
+Description: Aj Personal One Page Portfolio Template
+Version: 1.0
+Author: ThemeHavens
+
+Used Fonts : Raleway & Open Sans ( Google free fonts ).
+
+=>  Table of Content  <=
+
+( 1 ) Import Google Fonts
+( 2 ) Main Rules
+	2-a - Typography
+	2-b - Helping Classes
+	2-c - Buttons Styles
+( 3 ) Loading Page
+( 4 ) Home Section
+	4-a - Backgrounds
+	4-b - NavBar
+	4-c - Content
+( 5 ) Demos Section
+( 8 ) Purchase Section
+( 9 ) Footer Section
+( 10 ) To Top Button
+( 11 ) Media Queries
+ 
+----------------------------------------- */
+
+
+/* ---------------------------------------
+	( 1 ) Import Google Fonts
+ ---------------------------------------*/
+/* google font > Open Sans && Raleway */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:400,500");
+
+/* ---------------------------------------
+	( 2 ) Start Main Rules 
+----------------------------------------- */
+
+/*** 2-a - Typography ***/
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	position: relative;
+	line-height: 1;
+    background-color: #f7f7f7;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #333;
+	margin-top: 0;
+}
+p.para {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 1px;
+	color: #595959;
+}
+::-moz-selection, ::selection {color: #fff; background: #232332;}
+
+/*** 2-b - Helping Classes ***/
+.section {padding: 80px 0 40px;}
+.section-intro {margin-bottom: 60px;}
+.section-intro p {width: 75%; margin: 0 auto;}
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	background: rgba(0, 0, 0, 0.4);
+}
+.separator {
+	position: relative;
+	width: 70px;
+	height: 3px;
+	margin: 10px 0;
+	background: #232332;
+}
+.separator.centered {margin: 10px auto;}
+a, a:active, a:focus {outline: 0 !important; text-decoration: none !important;}
+#Container .mix {display: none;}
+
+/*** 2-d - Buttons Styles ***/
+.btn, .btn:active, .btn:focus {
+	outline: 0 !important;
+	-webkit-box-shadow: none !important;
+			box-shadow: none !important;
+}
+.btn-custom {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+    border-radius: 0px;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1px solid #232332;
+    background: transparent;
+    color: #333;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+.btn-custom.reverse {background: #232332;}
+.btn-custom.reverse:hover {border: 1px solid #232332;}
+.btn-custom.light:hover {color: #232332 !important;}
+.btn-custom:hover {background: #232332;}
+.btn-custom:hover, .btn-custom.reverse {color: #fff;}
+.btn-custom.reverse:hover {background: transparent;}
+.btn-custom.light:hover {background: #fff; border: 1px solid transparent !important;}
+.btn-custom.dark:hover {background: #222; border: 1px solid transparent !important;}
+.btn-custom.outline-white {color: #fff; border: 1px solid #fff;}
+
+/* End Main Rules */
+
+/* ---------------------------------------
+	( 3 ) Start Loading Page 
+----------------------------------------- */
+.loading {
+	display: block;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #fff;
+}
+.loading .loading-wrapper {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+.loading .loading-wrapper .loader {
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	background: #232332;
+	-webkit-animation: rotateRec 1.5s infinite ease-in-out;
+			animation: rotateRec 1.5s infinite ease-in-out;
+}
+.loading .loading-wrapper h4 {
+	color: #232332;
+	letter-spacing: 6px;
+	margin-top: 30px;
+}
+@-webkit-keyframes rotateRec {
+	0% {
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+				transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+				transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(179.9deg);
+				transform: perspective(120px) rotateX(-180deg) rotateY(179.9deg);
+	}
+}
+@keyframes rotateRec {
+	0% {
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+				transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+				transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(179.9deg);
+				transform: perspective(120px) rotateX(-180deg) rotateY(179.9deg);
+	}
+}
+
+/* End Loading Page */
+
+/* ---------------------------------------
+	( 4 ) Start Home Section 
+----------------------------------------- */
+
+/*** 4-a - Backgrounds ***/
+#home {
+	background: url("../img/header.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+/*** 4-b - NavBar ***/
+#home .navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+	background: transparent;
+	border-bottom: none;
+	-webkit-transition: all 0.4s ease-in-out;
+    		transition: all 0.4s ease-in-out;
+}
+#home .navbar .navbar-brand {
+	color: #fff;
+	height: inherit;
+	height: 80px;
+	line-height: 80px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 25px;
+	font-weight: bold;
+	-webkit-transition: all 0.4s ease-in-out;
+    		transition: all 0.4s ease-in-out;
+}
+#home .navbar span.colored-brand {
+	color: #c8c8c8;
+	font-size: 30px;
+	line-height: 10px;
+	padding: 0px 5px 4px;
+	background: #232332;
+}
+#home .navbar .nav>li>a {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-transform: capitalize;
+	font-weight: 400;
+	color: #c8c8c8;
+	-webkit-transition: all 0.4s ease-in-out;
+    		transition: all 0.4s ease-in-out;
+}
+#home .navbar .nav>li>a:focus, #home .navbar .nav>li>a:hover {color: #232332;}
+#home .navbar .nav .active a {background: none;	color: #fff;}
+#home .navbar.scrolled {
+	box-shadow: 0px 0px 10px #000;
+	background: #fff;
+	border-bottom: none;
+}
+#home .navbar.scrolled .navbar-brand {
+	height: 60px;
+	line-height: 60px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	color: #232332;
+}
+#home .navbar .navbar-toggle {
+	padding: 30px 15px;
+	margin: 0;
+	border: none;
+	-webkit-transition: all 0.4s ease-in-out;
+    		transition: all 0.4s ease-in-out;
+}
+#home .navbar .navbar-toggle:focus, #home .navbar .navbar-toggle:hover {background: transparent;}
+#home .navbar .navbar-toggle .icon-bar {
+	width: 30px;
+	height: 4px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+#home .navbar.scrolled .navbar-toggle {padding: 20px 15px;}
+#home .navbar.scrolled .navbar-toggle .icon-bar {background-color: #232332;}
+#home .navbar.scrolled .nav a {padding-bottom: 20px; padding-top: 20px;}
+#home .navbar.scrolled .nav .active a {color: #fff; background: #232332;}
+
+/*** 4-c - Content ***/
+.hero-content-wrapper {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+}
+.hero-content-wrapper .hero-content {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.hero-content-wrapper .hero-content h1 {
+	font-size: 5.5em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1;
+	margin: 0px auto;
+	color: #fff;
+}
+.hero-content-wrapper .hero-content p {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 34px;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 2px;
+	margin: 25px auto;
+}
+.hero-content-wrapper .hero-content a {
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0px;
+	margin: 10px;
+	color: #fff;
+}
+
+/* End Home Section */
+
+
+/* ---------------------------------------
+	( 5 ) Start Demos Section 
+----------------------------------------- */
+#demos p.title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	line-height: 24px;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	margin: 0 auto;
+}
+#demos .demo-block {
+	display: block;
+	position: relative;
+	top: 0;
+	margin-top: 40px;
+	padding-bottom: 30px;
+	-webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#demos .demo-block:hover {
+	top: -7px;
+	box-shadow: 0px 25px 45px 0px rgba(0,0,0,0.15);
+}
+#demos .demo-block h3 {
+	color: #333;
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-top: 40px;
+}
+
+/* End Demos Section */
+
+/* -------------------------------------
+    ( 8 ) Start Purchase Section
+* ------------------------------------- */
+#purchase {
+	background: #333 url("../img/section-bg-02.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 120px 0px 60px;
+}
+#purchase h2 {line-height: 2; text-transform: none; letter-spacing: 2px;}
+#purchase h2, #purchase a {color: #fff;}
+#purchase a {margin-bottom: 60px;}
+
+/* End Purchase Section */
+
+
+/* -------------------------------------
+    ( 9 ) Start Footer Section
+* ------------------------------------- */
+footer .copyright {
+	background: #212121;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+footer .copyright p {margin-bottom: 0; color: #ccc;}
+
+/* End Footer Section */
+
+
+/* -------------------------------------
+    ( 10 ) Start To Top Button
+* ------------------------------------- */
+#toTop {
+	position: fixed;
+	bottom: -60px;
+	right: -60px;
+	z-index: 20;
+	color: #fff;
+	background: #232332;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	cursor: pointer;
+	opacity: 0;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.16), 0px 2px 10px 0px rgba(0,0,0,0.12);
+	-webkit-transform: scale(0.2);
+		-ms-transform: scale(0.2);
+			transform: scale(0.2);
+	-webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    		transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#toTop.appeared {
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.7;
+	-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+			transform: scale(1);
+}
+#toTop i {
+	display: inline-block;
+	font-size: 25px;
+	line-height: 40px;
+}
+#toTop:hover {
+	opacity: 1;
+	box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.16), 0px 4px 12px 0px rgba(0,0,0,0.15);
+}
+
+/* End To Top Button */
+
+
+/* -------------------------------------
+    ( 11 ) Media Queries
+* ------------------------------------- */
+@media (max-width: 991px) { 
+	/* Home Section */
+	#home .navbar .nav>li>a {padding-left: 10px; padding-right: 10px;}
+	#home .navbar {background: #fff;}
+	#home .navbar .nav .active a, #home .navbar .navbar-brand {color: #232332;}
+	#home .navbar .navbar-toggle .icon-bar {background: #232332;}
+}
+
+@media (max-width: 767px) { 
+	/* Home Section */
+	.hero-content-wrapper .hero-content h1 {letter-spacing: 0px; font-size: 4.5em;}
+	.hero-content-wrapper .hero-content p {font-size: 1.1em;}
+}
+
+@media (max-width: 489px) {	
+	/* Home Section */
+	.hero-content-wrapper .hero-content h1 {font-size: 3.5em;}
+	.hero-content-wrapper .hero-content p {font-size: 1em;}
+	#home a.go-down {display: none;}
+}
+
+/* End Media Queries */

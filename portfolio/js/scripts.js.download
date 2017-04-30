@@ -1,0 +1,113 @@
+/* ---------------------------------------
+
+Template Name: A.J
+Description: Personal One Page Portfolio Template
+Version: 1.0
+Author: ThemeHavens
+
+=>  Table of Content  <=
+
+1 - Adjust Loading Page
+2 - Make Header Full Height
+3 - Parallax Effect
+4 - Move to section onclick on navbar link
+5 - change navbar background on scroll
+6 - Hide menu after clicking on a link
+7 - Launch To Top Button when scroll
+8 - Go To Top onclick on toTop Button
+
+--------------------------------------- */
+
+(function($) {
+
+	"use strict";
+
+    /* ---------------------------------------------------
+            1 - Adjust Loading Page
+    ----------------------------------------------------- */
+    $(window).on("load", function () {
+        $(".loading .loading-wrapper").delay(500).animate({
+             top: "-100%"
+        }, 1000, "easeInQuart");
+        $(".loading").delay(1100).fadeOut(1500);
+    });
+
+    /* ---------------------------------------------------
+            2 - Make Header Full Height
+    ----------------------------------------------------- */
+    var homeSec = $("#home");
+    homeSec.height($(window).height());
+
+    $(window).on("resize", function() {
+        homeSec.height($(window).height());
+    });
+
+    /* ---------------------------------------------------
+            3 - Parallax Effect
+    ----------------------------------------------------- */
+    var parallaxHome       = $("#home"),
+        parallaxFacts      = $("#fun-facts"),
+        parallaxPurchase   = $("#purchase");
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        parallaxHome.css({"background-attachment": "scroll"});
+        parallaxFacts.css({"background-attachment": "scroll"});
+        parallaxPurchase.css({"background-attachment": "scroll"});
+    } else {
+        parallaxHome.parallax("50%", 0.4);
+        parallaxFacts.parallax("50%", 0.25);
+        parallaxPurchase.parallax("50%", 0.3);
+    }
+
+    /* ---------------------------------------------------------
+            4 - Move to section onclick on navbar link 
+    ----------------------------------------------------- */
+    $("a.scroll-link").on("click", function (event) {
+        event.preventDefault();
+        var target = $($(this).attr("href"));
+        if (target) {
+            $("html, body").animate({
+                scrollTop: target.offset().top
+            }, 1000, "easeInQuart");
+        }
+    });
+
+    /* ---------------------------------------------------
+            5 - change navbar background on scroll 
+    ----------------------------------------------------- */
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 100) {
+            $("#home .navbar").addClass("scrolled");
+        } else {
+            $("#home .navbar").removeClass("scrolled");
+        }
+    });
+
+    /* ---------------------------------------------------
+            6 - Hide menu after clicking on a link 
+    ----------------------------------------------------- */
+    $(".nav a").on("click", function () {
+        $("#navbar-collaps").collapse("hide");
+    });
+
+    /* ---------------------------------------------------
+            7 - Launch To Top Button when scroll 
+    ----------------------------------------------------- */
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 400) {
+            $("#toTop").addClass("appeared");
+        } else {
+            $("#toTop").removeClass("appeared");
+        }
+    });
+
+    /* ---------------------------------------------------
+            8 - Go To Top onclick on toTop Button
+    ----------------------------------------------------- */
+    $("#toTop").on("click", function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1500, "easeInQuart");
+    });
+	
+})(jQuery);
+
